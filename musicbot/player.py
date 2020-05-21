@@ -284,7 +284,7 @@ class MusicPlayer(EventEmitter, Serializable):
                 self._kill_current_player()
 
                 boptions = "-nostdin"
-                aoptions = "-vn -b:a 32k"
+                aoptions = "-vn -b:a 64k"
                 if isinstance(entry, URLPlaylistEntry):
                     aoptions = entry.aoptions
                 else:
